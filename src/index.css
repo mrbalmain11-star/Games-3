@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Shimmer keyframes */
+@keyframes goldShimmer {
+  0% { filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.4)); }
+  50% { filter: drop-shadow(0 0 14px rgba(255, 215, 0, 0.85)); }
+  100% { filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.4)); }
+}
+
+.gold-glow-pulse {
+  animation: goldShimmer 2s infinite ease-in-out;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "عجلة توتي",
+  "description": "لعبة عجلة توتي الأصلية لتطبيق توتي شات (Toti Wheel) بنظام عملة الكونز وقاعدة بيانات المحفظة ولوحة الترتيب والقواعد الرسمية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
